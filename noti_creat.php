@@ -1,9 +1,3 @@
-<?php
-$mysqli = include_once "conexion.php";
-$resultado = $mysqli->query("SELECT id FROM videojuegos");
-$videojuegos = $resultado->fetch_all(MYSQLI_ASSOC);
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -22,7 +16,7 @@ $videojuegos = $resultado->fetch_all(MYSQLI_ASSOC);
                 </svg>
             </div>
             <h2 class="text-success">¡Éxito!</h2>
-            <p class="lead">El videojuego con id <?php echo htmlspecialchars($videojuegos["id"]); ?> se ha añadido correctamente.</p>
+            <p class="lead">El videojuego con se ha añadido correctamente.</p>
             <a href="listar.php" class="btn btn-primary mt-3">Ver lista de videojuegos</a>
         </div>
     </div>
