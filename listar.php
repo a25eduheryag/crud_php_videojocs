@@ -1,6 +1,6 @@
 <?php
 $mysqli = include_once "conexion.php";
-$resultado = $mysqli->query("SELECT id, nombre, descripcion FROM videojuegos");
+$resultado = $mysqli->query("SELECT id, nombre, descripcion, tipo FROM videojuegos");
 $videojuegos = $resultado->fetch_all(MYSQLI_ASSOC);
 ?>
 
@@ -12,6 +12,7 @@ $videojuegos = $resultado->fetch_all(MYSQLI_ASSOC);
                     <th>ID</th>
                     <th>Nombre</th>
                     <th>Descripción</th>
+                    <th>Tipo</th>
                     <th>Editar</th>
                     <th>Eliminar</th>
                 </tr>
@@ -23,6 +24,7 @@ $videojuegos = $resultado->fetch_all(MYSQLI_ASSOC);
                         <td><?php echo $videojuego["id"] ?></td>
                         <td><?php echo $videojuego["nombre"] ?></td>
                         <td><?php echo $videojuego["descripcion"] ?></td>
+                        <td><?php echo $videojuego["tipo"] ?></td>
                         <td>
                             <a class="btn btn-warning" href="editar.php?id=<?php echo $videojuego["id"] ?>">Editar</a>
                         </td>
