@@ -17,6 +17,7 @@
                     <option value="Esport">Esport</option>
                     <option value="Rol">Rol</option>
                     <option value="Lluita">Lluita</option>
+                </select>
             </div>
             <div class="form-group"><button class="btn btn-success">Guardar</button></div>
         </form>
