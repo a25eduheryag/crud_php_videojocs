@@ -9,5 +9,7 @@ VALUES
 (?, ?, ?)");
 $sentencia->bind_param("sss", $nombre, $descripcion, $tipo);
 $sentencia->execute();
-header("Location: noti_creat.php");
+$id = $mysqli->query("SELECT LAST_INSERT_ID()")->fetch_row()[0];
+
+header("Location: noti_creat.php" . $id);
 ?>

@@ -1,3 +1,7 @@
+<?php
+$id = $_GET["id"]
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,7 +20,7 @@
                 </svg>
             </div>
             <h2 class="text-success">¡Éxito!</h2>
-            <p class="lead">El videojuego con se ha añadido correctamente.</p>
+            <p class="lead">El videojuego con ID <?php echo $id ?> se ha añadido correctamente.</p>
             <a href="listar.php" class="btn btn-primary mt-3">Ver lista de videojuegos</a>
         </div>
     </div>
