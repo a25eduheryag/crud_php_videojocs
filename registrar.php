@@ -8,5 +8,5 @@ VALUES
 (?, ?)");
 $sentencia->bind_param("ss", $nombre, $descripcion);
 $sentencia->execute();
-header("Location: listar.php");
+header("Location: noti_creat.php");
 ?>
