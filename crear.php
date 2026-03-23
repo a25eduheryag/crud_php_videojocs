@@ -11,6 +11,13 @@
                 <label for="descripcion">Descripción</label>
                 <textarea placeholder="Descripción" class="form-control" name="descripcion" id="descripcion" cols="30" rows="10" required></textarea>
             </div>
+            <div class="form-group">
+                <label for="tipo">Tipo</label>
+                <select name="tipo" id="tipo">
+                    <option value="Esport">Esport</option>
+                    <option value="Rol">Rol</option>
+                    <option value="Lluita">Lluita</option>
+            </div>
             <div class="form-group"><button class="btn btn-success">Guardar</button></div>
         </form>
     </div>
