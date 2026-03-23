@@ -19,8 +19,15 @@ $videojuegos = $resultado->fetch_all(MYSQLI_ASSOC);
             </thead>
             <tbody>
                 <?php
-                foreach ($videojuegos as $videojuego) { ?>
-                    <tr>
+                foreach ($videojuegos as $videojuego) {
+                    if($videojuego["tipo"] == "Esport"){
+                        $color = "table-success";
+                    }else if($videojuego["tipo"] == "Rol"){
+                         $color = "table-primary";
+                    }else if($videojuego["tipo"] == "Lluita"){
+                         $color = "table-danger";
+                    } ?>
+                    <tr class="<?php echo $color ?>">
                         <td><?php echo $videojuego["id"] ?></td>
                         <td><?php echo $videojuego["nombre"] ?></td>
                         <td><?php echo $videojuego["descripcion"] ?></td>

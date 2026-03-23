@@ -18,7 +18,7 @@
     </style>
 </head>
 <body>
-  <main>
+  <main class="container">
     <h1>Bienvenido a mi Aplicación de Videojuegos</h1>
     <a href="crear.php" class="btn btn-primary">Crear un videojuego</a>
     <a href="listar.php" class="btn btn-primary">Listar videojuegos</a>
